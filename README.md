@@ -1,34 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# nextjs_timer
 
-## Getting Started
+Next.js を使ったカウントダウンタイマーです。
 
-First, run the development server:
+![Github-issues](https://img.shields.io/github/issues/sakelog/nextjs_timer_new?style=flat-square)
+![Github-forks](https://img.shields.io/github/forks/sakelog/nextjs_timer_new?style=flat-square)
+![Github-stars](https://img.shields.io/github/stars/sakelog/nextjs_timer_new?style=flat-square)
+![Github-license](https://img.shields.io/github/license/sakelog/nextjs_timer_new?style=flat-square)
+![create-github-pages](https://github.com/sakelog/nextjs_timer_new/workflows/create-github-pages/badge.svg?branch=main)
 
-```bash
-npm run dev
-# or
-yarn dev
+## 使用している技術
+
+- [Next.js](https://nextjs.org/)
+- [React](https://ja.reactjs.org/)
+
+フレームワークとして Next.js を使用し、React-hooks でタイマー制御をしています。
+
+## 使用方法
+
+### 事前インストールが必要なもの
+
+- [yarn](https://classic.yarnpkg.com/ja/)
+
+### クローン後のコマンド
+
+リポジトリをクローン後、下記コマンドを実行してください。
+
+```shell
+yarn install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+下記コマンドで開発用のサーバーが立ち上がります。
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+正常に動作することを確認してください。
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```shell
+yarn run dev
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## 動作ページ
 
-## Learn More
+実際に動いているものは Github Pages で公開中です。
 
-To learn more about Next.js, take a look at the following resources:
+<https://sakelog.github.io/nextjs_timer_new/>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 作成者
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- 作成者:sake
+- E-mail:sakelog.website@gmail.com
+- Twitter:[@sake_engineer](https://twitter.com/sake_engineer)
+- Web サイト:https://sakeengineer.com/
