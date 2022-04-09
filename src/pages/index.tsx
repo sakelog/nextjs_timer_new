@@ -7,6 +7,7 @@ import RemainTimeItem from '@components/RemainTimeItem';
 import { minuteConverter, secondConverter } from '@lib/timeConverter';
 import PlusMinusButton from '@components/PlusMinusButton';
 import ControlButton from '@components/ControlButton';
+import ExternalLink from '@components/ExternalLink';
 
 import { FiPlay, FiStopCircle, FiRotateCcw } from 'react-icons/fi';
 import { FaTwitter, FaGithub } from 'react-icons/fa';
@@ -144,9 +145,13 @@ const Home: NextPage = () => {
       </div>
 
       <footer className="bg-sky-700 text-white mt-auto p-2">
-        <div className="flex space-x-2 text-xl">
-          <FaTwitter />
-          <FaGithub />
+        <div className="flex space-x-4 text-2xl">
+          <ExternalLink path="https://twitter.com/sake_engineer">
+            <FaTwitter className="hover:text-gray-400" />
+          </ExternalLink>
+          <ExternalLink path="https://github.com/sakelog/nextjs_timer_new">
+            <FaGithub className="hover:text-gray-400" />
+          </ExternalLink>
         </div>
       </footer>
     </div>
