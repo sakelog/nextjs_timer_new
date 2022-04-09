@@ -34,15 +34,13 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
       - name: Install dependencies
-        run: yarn
+        run: yarn install
       - name: deploy
-        run: yarn run deploy
-        env:
-          GITHUB_PAGES: true
-          REPOSITORY_NAME: '/nextjs_timer_new'
-      - name: setup Github Pages
+        run: yarn build
+        run: yarn export
+
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
           publish_dir: ./out
