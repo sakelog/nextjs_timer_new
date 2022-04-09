@@ -66,7 +66,7 @@ const Home: NextPage = () => {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen font-sans">
       <Head>
         <title>SimpleCountDownTimer</title>
         <meta
@@ -74,6 +74,16 @@ const Home: NextPage = () => {
           content="Next.jsで作成したカウントダウンタイマー"
         />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono:wght@700&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
       <header className="mb-2 p-2 bg-sky-700 text-white">
@@ -93,7 +103,9 @@ const Home: NextPage = () => {
               }
             />
             <div className="text-center grid grid-rows-2 items-center">
-              <span className="text-2xl md:text-4xl font-bold">:</span>
+              <span className="text-2xl md:text-4xl font-bold font-time">
+                :
+              </span>
             </div>
             <RemainTimeItem
               remainTimeString={secondConverter(remainTime)}

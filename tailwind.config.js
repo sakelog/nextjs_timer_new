@@ -4,7 +4,19 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: [
+          'Lato',
+          '"Hiragino Sans"',
+          '"Hiragino Kaku Gothic ProN"',
+          '"Yu Gothic"',
+          'Meiryo',
+          'sans-serif',
+        ],
+        time: ['"Roboto Mono"', 'monospace'],
+      },
+    },
   },
   plugins: [],
 };
