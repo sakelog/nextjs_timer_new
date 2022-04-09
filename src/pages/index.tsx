@@ -51,7 +51,7 @@ const Home: NextPage = () => {
     intervalRef.current = setInterval(() => {
       setRemainTime((r) => r - 1);
     }, 1000);
-  }, [remainTime, isTimeUp]);
+  }, []);
   const stop = useCallback(() => {
     if (intervalRef.current === null) {
       return;
@@ -75,16 +75,6 @@ const Home: NextPage = () => {
           content="Next.jsで作成したカウントダウンタイマー"
         />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono:wght@700&display=swap"
-          rel="stylesheet"
-        />
       </Head>
 
       <header className="mb-2 p-2 bg-sky-700 text-white">
